@@ -1,0 +1,102 @@
+.header {
+    width: 1200px;
+    height: 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(https://images.pexels.com/photos/2166927/pexels-photo-2166927.jpeg?cs=srgb&dl=animal-aquarium-aquatic-2166927.jpg&fm=jpg) no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 70px;
+    align-items: center;
+    color: white;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+}
+
+.header-logo {
+    height: 100px;
+}
+
+.header nav a {
+    margin: 25px;
+    font-size: 25px;
+}
+
+.header nav a:hover {
+    color: #666;
+}
+
+.header nav a:active {
+    color: #444;
+}
+
+.header .btn {
+    background: none;
+    cursor: pointer;
+    font: 700 18px 'Roboto Slab', sans-serif;
+    border: none;
+    border-radius: inherit;
+}
+
+.header .btn:focus {
+    outline: none;
+}
+
+.header .draw-border {
+    box-shadow: inset 0 0 0 4px #58afd1;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+}
+
+.header .draw-border::before,
+.header .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.header .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+
+.header .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+
+.header .draw-border:hover {
+    color: #ffe593;
+}
+
+.header .draw-border:hover::before, .header .draw-border:hover::after {
+    border-color: #ffe593;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+
+.header .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+}
+
+.header .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+}
+
+.header .draw-border:active {
+    background: rgba(255, 255, 255, 0.1);
+}
+

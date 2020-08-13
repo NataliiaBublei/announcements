@@ -1,0 +1,55 @@
+.announcement-item {
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #e1e1e1;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-item-title {
+    display: inline-block;
+    color: #8c443e;
+    font-size: 20px;
+    letter-spacing: 0.04em;
+    margin: 0;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+.announcement-item-title:hover {
+    border-color: #999;
+}
+
+.announcement-item-description {
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.announcement-item-date {
+    font-size: 14px;
+    color: #d26960;
+}
+
+.announcement-item .close-item-button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    float: right;
+    position: relative;
+    top: -20px;
+    left: 35px;
+    cursor: pointer;
+}
+
+.announcement-item .close-item-button:before {
+    content: "\2716";
+    font-size: 20px;
+    position: relative;
+    top: 8px;
+    left: 0;
+}

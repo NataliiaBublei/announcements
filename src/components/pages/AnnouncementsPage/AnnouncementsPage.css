@@ -1,0 +1,15 @@
+.announcement-title  {
+    font-size: 26px;
+    color: #444;
+    margin: 20px 15px;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.5s;
+    display: inline-block;
+}
+
+.announcement-title:hover {
+    cursor: pointer;
+    color: #000;
+    border-color: #000;
+}
+

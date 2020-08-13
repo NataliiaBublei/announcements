@@ -1,0 +1,16 @@
+.search-form {
+    border: solid 1px #222;
+    border-radius: 10px;
+    background: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.search-form .search-input{
+    width: 100%;
+    font-size: 22px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}

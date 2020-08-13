@@ -1,0 +1,20 @@
+.similar-announcements-list {
+    padding: 35px;
+}
+
+.similar-announcements-list h3 {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.similar-announcements-item {
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: #222222;
+}
+
+.similar-announcements-item:hover {
+    cursor: pointer;
+    color: #d26960;
+}
